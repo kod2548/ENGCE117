@@ -11,7 +11,7 @@ int main()
 
     if (operationCode <= 0 || operationCode > 4)
     {
-        printf("Error\n");
+        printf("Invalid Operation\n");
     }
 
     switch (operationCode)
