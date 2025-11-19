@@ -14,14 +14,7 @@ int main()
         sum += i;
     }
 
-    if (N >= 0)
-    {
-        printf("%d\n", sum);
-    }
-    else
-    {
-        printf("Error");
-    }
+    printf("%d\n", sum);
 
     return 0;
 }
