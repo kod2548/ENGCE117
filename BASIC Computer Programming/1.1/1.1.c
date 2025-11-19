@@ -9,7 +9,7 @@ int main()
     }
     if (N <= 0)
     {
-        printf("The number is incorrect\n");
+        printf("Error\n");
     }
     for (i = 0; i < N; i++)
     {
