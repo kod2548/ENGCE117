@@ -11,9 +11,12 @@ int main()
     {
         printf("Error\n");
     }
-    for (i = 0; i < N; i++)
+    else
     {
-        printf("Hello Loop!\n");
+        for (i = 0; i < N; i++)
+        {
+            printf("Hello Loop!\n");
+        }
     }
     return 0;
 }
