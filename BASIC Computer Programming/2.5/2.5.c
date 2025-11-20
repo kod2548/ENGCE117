@@ -40,6 +40,7 @@ int main()
         else
         {
             printf("Error");
+            return 0;
         }
 
         // ต้องรับค่าคะแนนถัดไปที่ท้ายลูป
