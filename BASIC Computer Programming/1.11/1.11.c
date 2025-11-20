@@ -1,4 +1,3 @@
-// Pre-code (โค้ดบังคับ)
 #include <stdio.h>
 
 int main()
@@ -34,6 +33,7 @@ int main()
         break;
 
     default:
+        totalBill = 0.0;
         break;
     }
 
@@ -46,6 +46,7 @@ int main()
     else
     {
         printf("Invalid Category\n");
+        printf("Total Price: %.2f\n", totalBill);
     }
 
     return 0;
