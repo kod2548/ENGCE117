@@ -32,11 +32,13 @@ int main()
             return 0;
         }
 
-        itemCost = unitPrice * quantity;
-
-        if (unitPrice >= 1000)
+        if (unitPrice >= 1000.0)
         {
-            itemCost = itemCost * 0.90;
+            itemCost = unitPrice * 0.9 * quantity;
+        }
+        else
+        {
+            itemCost = unitPrice * quantity;
         }
 
         grandTotal += itemCost;
