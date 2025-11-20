@@ -21,9 +21,15 @@ int main()
         {
             return 1;
         }
+
         if (scanf("%d", &quantity) != 1)
         {
             return 1;
+        }
+        if (quantity <= 0)
+        {
+            printf("Error");
+            return 0;
         }
 
         itemCost = unitPrice * quantity;
