@@ -13,6 +13,14 @@ int main()
         scanf("%d", &daily_temp[i]);
     }
 
+    printf("\n--- DAILY TEMPERATURE REPORT ---\n");
+    printf("Recorded Temperatures (C): ");
+    for (i = 0; i < DAYS; i++)
+    {
+        printf("%d ", daily_temp[i]);
+    }
+    printf("\n");
+
     max_temp = daily_temp[0];
     for (i = 0; i < DAYS; i++)
     {
@@ -22,13 +30,6 @@ int main()
         }
     }
 
-    printf("\n--- DAILY TEMPERATURE REPORT ---\n");
-    printf("Recorded Temperatures (C): ");
-    for (i = 0; i < DAYS; i++)
-    {
-        printf("%d ", daily_temp[i]);
-    }
-    printf("\n");
     printf("Maximum Temperature Found: %d C\n", max_temp);
 
     if (max_temp >= 35)
