@@ -2,27 +2,21 @@
 
 int main()
 {
-    int N, i;
+    int N;
+    scanf("%d", &N);
+
+    int scores[N];
     int passSum = 0;
     int failCount = 0;
 
-    if (scanf("%d", &N) != 1)
-    {
-        return 1;
-    }
-
-    int scores[N];
-
+    int i;
     for (i = 0; i < N; i++)
     {
-        if (scanf("%d", &scores[i]) != 1)
-        {
-            return 1;
-        }
+        scanf("%d", &scores[i]);
 
         if (scores[i] >= 50)
         {
-            passSum += scores[i];
+            passSum = passSum + scores[i];
         }
         else
         {
