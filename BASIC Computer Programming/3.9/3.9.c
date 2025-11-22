@@ -12,6 +12,13 @@ int main()
     {
         return 1;
     }
+
+    if (initialBudget < 0 || N_DAYS < 0)
+    {
+        printf("Error");
+        return 0;
+    }
+
     remainingBudget = initialBudget;
 
     printf("Day | Spend | Remaining\n");
