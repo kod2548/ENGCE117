@@ -47,25 +47,22 @@ int main()
 
     for (i = 0; i < N; i++)
     {
-        /* ถ้าตัวนี้ถูกนับไปแล้ว ให้ข้าม */
         if (status[i] == VISITED)
         {
             continue;
         }
 
-        count = 1; /* เจอตัวเอง 1 ครั้งแน่นอน */
+        count = 1;
 
-        /* loop j เพื่อค้นตัวซ้ำ */
         for (j = i + 1; j < N; j++)
         {
             if (data[j] == data[i])
             {
                 count++;
-                status[j] = VISITED; /* ทำเครื่องหมายว่าตัวนี้ถูกนับแล้ว */
+                status[j] = VISITED;
             }
         }
 
-        /* แสดงผลเฉพาะตัวที่เป็น unique (ยังไม่ VISITED) */
         printf("%6d | %d\n", data[i], count);
     }
     return 0;
