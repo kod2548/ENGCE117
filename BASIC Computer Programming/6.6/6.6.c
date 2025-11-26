@@ -30,7 +30,7 @@ int main()
     int finance_status;
     int i;
 
-    printf("Enter %d transactions (Income +, Expense -):\n");
+    printf("Enter %d transactions (Income +, Expense -):\n", SIZE);
     for (i = 0; i < SIZE; i++)
     {
         printf("Transaction %d: ", i + 1);
