@@ -9,6 +9,12 @@ int GetSet(int *number)
     printf("Specify the number of digits to add: ");
     scanf("%d", number);
 
+    if (*number <= 0)
+    {
+        printf("ERROR Invild Number\n");
+        return 0;
+    }
+
     for (i = 0; i < *number; i++)
     {
         printf("Specify the numbers you want to add [%d]: ", i + 1);
@@ -24,6 +30,11 @@ int main()
     int data, num;
 
     data = GetSet(&num);
+
+    if (num <= 0)
+    {
+        return 0;
+    }
 
     printf("\n------- Calculate -------\n");
     printf("Number processing: %d\n", data);
