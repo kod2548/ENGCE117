@@ -21,6 +21,12 @@ int main()
     GetSet(data, &num);
     n = num;
 
+    if (num <= 0)
+    {
+        printf("ERROR Invild Number\n");
+        return 0;
+    }
+
     printf("\n----- Member Report -----\n");
     printf("Member have: %d\n", num);
     for (i = 0; i < num; i++)
