@@ -18,8 +18,11 @@ void reverse(char str1[], char str2[])
 
 int main()
 {
-    char text[50] = "I Love You";
+    char text[50];
     char out[50];
+
+    printf("Insert Word: ");
+    scanf(" %99[^\n]", &text);
 
     reverse(text, out);
 
