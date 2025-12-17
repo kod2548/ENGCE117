@@ -8,22 +8,21 @@ struct student
     float gpa;
 };
 
-void upgrade(struct student child)
+void upgrade(struct student *child)
 {
-    if (child.sex == 'F')
+    if (child->sex == 'F')
     {
-        child.gpa *= 1.20;
+        child->gpa *= 1.20;
     }
-    else if (child.sex == 'M')
+    else if (child->sex == 'M')
     {
-        child.gpa *= 1.10;
+        child->gpa *= 1.10;
     }
     else
     {
         printf("Error\n");
         return;
     }
-    printf("Now your gpa: %.2f", child.gpa);
 }
 
 int main()
@@ -42,6 +41,8 @@ int main()
     printf("Enter gpa: ");
     scanf("%f", &aboy.gpa);
 
-    upgrade(aboy);
+    upgrade(&aboy);
+
+    printf("Now your gpa: %.2f", aboy.gpa);
     return 0;
 }
