@@ -54,7 +54,9 @@ void LinkedList::InsNode(char n[], int a, char s, float g)
 void LinkedList::DelNode()
 {
     if (*now == NULL)
+    {
         return;
+    }
 
     struct studentNode *tmp = *now;
     *now = tmp->next;
@@ -64,13 +66,17 @@ void LinkedList::DelNode()
 void LinkedList::GoNext()
 {
     if (*now != NULL)
+    {
         now = &((*now)->next);
+    }
 }
 
 void LinkedList::ShowNode()
 {
     if (*now != NULL)
+    {
         printf("%s %d %c %.2f\n", (*now)->name, (*now)->age, (*now)->sex, (*now)->gpa);
+    }
 }
 
 class NewList : public LinkedList
@@ -88,7 +94,9 @@ void NewList::GoFirst()
 void NewList::ShowNode()
 {
     if (start != NULL && start->next != NULL)
+    {
         printf("%s %s\n", start->name, start->next->name);
+    }
 }
 
 int main()
