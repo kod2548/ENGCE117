@@ -35,7 +35,9 @@ LinkedList::~LinkedList()
 {
     now = &start;
     while (*now != NULL)
+    {
         DelNode();
+    }
 }
 
 void LinkedList::InsNode(char n[], int a, char s, float g)
